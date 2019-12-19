@@ -1,1 +1,974 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{font-size:0.8rem; font-family: 'Roboto', sans-serif;}
+br{display:none;}
+.h3, h3 {font-size:1.1rem; font-weight:400;}
+.h2, h2 {font-size:1rem; font-weight:400;}
+.h4, h4 {font-size:1rem; font-weight:400;}
+.trackBtnBg{font-size:1rem;}
+form .form-control{font-size:0.8rem; border-radius:10px;}
+label{font-weight:600;}
+a{color:#4A6CFF;}
+.btn-link{color:#4A6CFF;}
+a, button, a:focus, button:focus{outline:none !important; outline-color:transparent;}
+textarea{resize:none;}
+img{max-width:100%;}
+ul{margin:0; padding:0;}
+ul li{margin:0; padding:0; list-style:none;}
+.btn-primary{color:#fff; background-color:#ff3a3a; border-color:#ff3a3a;}
+.btn-primary:hover{color: #fff; background-color:#dc3c3c; border-color:#dc3c3c;}
+.btn-primary.focus, .btn-primary:focus{background-color:#dc3c3c; border-color:#dc3c3c;}
+
+
+/* Header Before Login Css Start */
+.headerBL{/*background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); box-shadow:0 -1px 6px #05586f;*/ padding-top:10px; position:fixed; padding-bottom:10px; width:100%; top:0; z-index:9;}
+.headerBL .menuMain{display:none; transition: transform 200ms ease-in-out; position:fixed; top:47px; z-index:99; background:#0192ff; height: calc(100vh - -15px); left:0; border-top:1px solid #037cd8; width:170px; padding:5px 0; border-right:1px solid #037cd8; box-shadow:2px 5px 5px #207390;}
+.headerBL .menuMain.openMenu{display:block;}
+.mobMenuIcon{position:absolute; left:15px; top:15px;}
+.mobMenuIcon i{font-size:20px; color:#fff; cursor:pointer;}
+.headerBL .siteName img{width:60px;}
+.headerBL .menusSty{margin:0; padding:0;}
+.headerBL .menusSty li{margin:0; padding:0 0 10px 14px; list-style:none;}
+.headerBL .menusSty a{margin:0; padding:0; color:#fff;}
+/* Header Before Login Css End */
+
+/* Banner CSS Start */
+.bannerMain{/*background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); box-shadow:0 1px 6px #05586f inset;*/ height:auto; margin-top:43px;}
+
+.loginFormMain{background:#fff; border-radius:10px; margin:25px 10px 10px; padding:15px;}
+.loginFormMain .loginTitle{margin:0 0 20px 0;}
+.loginFormMain input{border:none; border-bottom:1px solid #b8b8b8; border-radius:0 !important; padding-left:35px;}
+.loginFormMain input:focus {border:none; border-bottom:1px solid #0196ff; outline:0; box-shadow:none;}
+.loginFormMain .iconStyLg{position:absolute; left:5px; top:5px;}
+.loginFormMain .loginbtn{width:213px; margin:0 auto; display:block; font-size:1rem;}
+
+/* Truck Animation CSS Start */
+.cityImg{background:url(assets/img/cityImgHome.png) repeat 0 0; width:100%; height:251px; top:220px; position:absolute; opacity:0.4; -webkit-animation: slideImg 40s linear infinite; -moz-animation: slideImg 40s linear infinite; -ms-animation: slideImg 40s linear infinite; -o-animation: slideImg 40s linear infinite; animation: slideImg 40s linear infinite;}
+.truckSty{width:20em; height:9em; position:relative; margin-top:45px; opacity: 1; margin-left:auto; margin-right:auto; z-index:4; -webkit-animation: carMove 0.3s infinite; -moz-animation: carMove 0.3s infinite; -ms-animation: carMove 0.3s infinite; -o-animation: carMove 0.3s infinite; animation: carMove 0.3s infinite;}
+.truckSty img{width:200px;}
+.wind{position:absolute; z-index:-1; right:100%; height:100%; top:0; margin-right:-1.25em;}
+.wind .p{position:absolute; background:#fff; border-radius:0.625em; height:0.225em;}
+.wind .p1{width:4.375em; position:absolute; right:0; top:1.5625em; animation: wind 1s -1s linear infinite;}
+.wind .p2{width:6.25em; right:2.5em; top:3.75em; animation: wind 1s -2s linear infinite;}
+.wind .p3{width:3.125em; right:0; top:6.5625em; animation: wind 1s -1s linear infinite;}
+.wind .p4{width:3.75em; right:6.25em; top:8.4375em; animation: wind 1s 1s linear infinite;}
+.wind .p5{width:4.375em; right:1.875em; top:9.0625em; animation: wind 1s -1.5s linear infinite;}
+/* Truck Animation CSS End */
+
+/* Banner CSS End */
+.positionR{position:relative;}
+.btnGradientB{/*background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%);*/ background:#ff3a3a; border:none; color:#fff;}
+.btnGradientB:hover{/*background-image: linear-gradient(to left, #0081ff 0%, #03c6fc 80%);*/ background:#dc3c3c; color:#fff;}
+
+/* Support Privacy Tracking CSS Start */
+.supportPrivacyTrackingMain{margin-top:0;}
+.supportPrivacyTrackingMain .boxStyMain{background:#fff; text-align:center; box-shadow:none; border-radius:0; padding:10px 10px 10px; border-bottom: 1px solid #ddd; margin-bottom:10px;}
+.supportPrivacyTrackingMain .imgMain{justify-content:center; width:70px; height:70px; border-radius:50%; border:2px solid #03c6fc; margin:0 auto; background-color:#f3f5f8; display:flex; align-items: center;}
+.supportPrivacyTrackingMain .imgMain img{width:45px;}
+.supportPrivacyTrackingMain .boxStyMain .boxTitleSPT{font-weight:400; color:#000; margin:15px 0;}
+.supportPrivacyTrackingMain .boxStyMain p{margin:0; color:#737373;}
+/* Support Privacy Tracking CSS End */
+
+.sectionTitles{font-weight:400; text-align:center; font-size:2rem; text-transform:uppercase; padding:15px 0;}
+.sectionTitles span{display:block; border-bottom:4px solid #fe3a3a; width:70px; margin:7px auto;}
+
+/* About Us Section CSS Start */
+.aboutusSecMain{text-align:center; padding:10px 0;}
+.aboutusSecMain p{ color:#737373;}
+/* About Us Section CSS End */
+
+/* Our Clients Section CSS Start */
+.ourClientsMain{background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); padding-bottom:50px;}
+.ourClientsMain .ourClientsBox{padding:15px; margin:10px; border:1px solid #fff;}
+.ourClientsMain .ourClientsImg{width:60px; margin:0 auto;}
+.ourClientsMain .ourClientsImg img{width:60px; border-radius:50%; border:2px solid #fff; height:60px;}
+.ourClientsMain .ourClientTitle{color:#fff; text-align:center; margin:15px 0 10px; font-weight:400;}
+.ourClientsMain p{color:#fff; text-align:center; margin:0;}
+.ourClientsMain .carousel-indicators{bottom:-50px;}
+/* Our Clients Section CSS End */
+
+/* Contact Us Section CSS Start */
+.contactUsSecMain{background:#f7f7f7; padding:10px 0;}
+.contactUsSecMain p{color:#737373; text-align:center; margin:15px 0;}
+.contactUsSecMain .sendMessageBtn{width:180px; margin:0 auto; display:block; font-size:1rem;}
+.contactBoldTitle{display: block; font-weight:600; margin:2px 0 0; font-size:1rem;}
+
+.mapSectionMain{border-top:1px solid #b5babb;}
+.mapSectionMain iframe{width:100%; height:230px;}
+/* Contact Us Section CSS End */
+
+/* Footer Section Start */
+.footerMain{background-color:#13253b; padding-top:15px; padding-bottom:15px;}
+.footerMain .copyRightTxt{color:#89929d; text-align:center; margin-bottom:10px;}
+.socialIconFot{display:flex; justify-content:center; margin:0; padding:0;}
+.socialIconFot li{list-style:none; margin:0 0 0 15px; padding:0;}
+.socialIconFot li i{color:#89929d; font-size:20px;}
+
+/* Heading Style */
+.headingSty{margin:0 0 15px;}
+
+/* After Login CSS */
+.padding-3{padding:3px;}
+
+/* Header After Login CSS Start */
+/*.container-fluid{padding-right:32px; padding-left:32px;}*/
+.vtsBgGradient{background:#000;}
+.headerAL{padding:6px 0;}
+.logoStyM{margin:10px 0;}
+.headerAL .logoImgSty{width:150px;}
+.headerAL .nav .nav-link{color:#fff; padding:0.3rem 0.5rem; font-size:0.9rem; cursor:pointer;}
+.headerAL .nav .active .nav-link{color:#95faff;}
+.headerAL .nav .profileDropdown button{background:none; border:none; margin:0; padding:0; font-size:0.9rem;}
+.headerAL .nav .profileDropdown button:focus{box-shadow:none !important; outline:none !important; background:none !important;}
+.headerAL .nav .profileDropdown .dropdown-item{font-size:0.9rem; padding:5px 10px;}
+.headerAL .nav .profileDropdown .dropdown-item:hover{color:#16181b; text-decoration:none; background-color:#daf0f7;}
+.headerAL .nav .profileDropdown .dropdown-item:focus{color:#16181b; text-decoration:none;}
+.userProfImg img{width:35px; border-radius:50%;}
+.bellSty .badge{position:absolute; top:-1px; left:14px; font-weight:500;}
+/* Header After Login CSS End */
+
+/* Contentarea After Login CSS Start */
+.afterLoginPageMain{position:relative;}
+/* .contentBgGradient{background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); height:350px; top:-30px; position:absolute; left:0; z-index:-1; right:0;} */
+.contentAreaBox{height:auto; padding:12px; background:#fff; border-radius:10px; width:100%; box-shadow:0 0 6px #8c8c8c; margin:22px 0 0;}
+.contentSecMain{max-height:none; overflow-y:auto; padding-left:10px; padding-right:10px;}
+.heightAuto{height:auto;}
+.titleAndSearchMain{padding-left:10px; padding-right:10px;}
+/* Contentarea After Login CSS End */
+
+.totalBox{border-radius:10px; width:180px; text-align:center; border:1px solid #ddd; padding:15px 0; margin:20px 0 0; background-color:rgba(255, 255, 255, 0.9);}
+.totalBox .titleTC{font-weight:500; margin:10px 0 7px; color:#757575; font-size:0.9rem;}
+.totalBox .valueTC{font-size:1rem; font-weight:500; color:#000;}
+
+.cardListScroll{overflow-y:auto; max-height:250px;}
+.cardListSty{box-shadow:0 0 10px #ddd; border-radius:10px; border:1px solid #ddd;}
+.cardListSty .headerCL{background:#dff4ff; border-radius:10px 10px 0 0; padding:5px 10px; border-bottom:1px solid #ddd;}
+.cardListSty .bodyCL{padding:10px;}
+.bodyCL li{border-bottom:1px solid #ddd; margin:0 0 7px; padding:0 0 7px;}
+.bodyCL li:last-child{border-bottom:none; margin:0; padding:0;}
+.bodyCL li label{margin:0; padding:0; display:inline-block; margin-right:5px;}
+.bodyCL .companyText{ font-weight:500;}
+.ownerText label, .ownerText span{color:#737373;}
+
+/* Accordion Card CSS Start */
+.accordionCardMain{margin:0 0 16px 0; background:#e4f4f9; border:1px solid #a3dcec; border-radius:5px; box-shadow:0 0 3px #c5c4c4;}
+.accordionCardHed{padding:3px 10px; border-radius:6px 6px 0 0;}
+.accordionCardHed .iconBtnSty{transform: rotate(180deg); -ms-transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transition: all 0.7s ease-in-out; -moz-transition: all 0.7s ease-in-out; -o-transition: all 0.7s ease-in-out; transition: all 0.7s ease-in-out;}
+.accordionCardHed .iconBtnSty.collapsed{transform: rotate(0deg); -ms-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg);}
+.accordionCardMain .fieldMainCM{margin-right:13px;}
+.accordionCardHed .highlightLabel{color:#0067a2;}
+.accordionCardMain label{margin:0 5px 0 0; display:inline-block;}
+.accordionCardBody{padding:10px; background:#fff; border-top:1px solid #a3dcec;  border-radius:0 0 6px 6px;}
+/* Accordion Card CSS End */
+
+/* button Icon */
+.iconBtnSty{border:1px solid #0388d1; padding:1px 0 0; margin:4px 0; width:26px; height:26px; border-radius:50%;}
+.iconBtnBN{padding:0; margin:0;}
+
+.driverProfilePic img{width:128px; height:128px; border:1px solid #a3dcec; border-radius:50%; padding:2px;}
+
+.devicesBoxMain .devicesBox{border:1px solid #a3dcec; margin:6px; min-width:235px; padding:10px 10px 15px; border-radius:10px; box-shadow: 0 0 3px #c5c4c4;}
+.devicesBoxMain .deviceImg{margin:5px auto 10px; text-align:center; padding-bottom:16px; border-bottom:1px dashed #ade0ee;}
+.devicesBoxMain .deviceImg img{width:50px;}
+.devicesBoxMain label{margin:0; padding:0; display:block;}
+.devicesBoxMain span{margin:0; padding:0 0 0 5px; display:block;}
+
+/* Popup Css Start */
+.modal-dialog .modal-content{box-shadow:0 0 5px #444; border-radius:10px;}
+.modal-dialog .modal-header{background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); padding:8px 15px; border-radius:8px 8px 0 0;}
+.modal-dialog .modal-header .modal-title{color:#fff; font-weight:normal;}
+.modal-dialog .close{font-weight:500; color:#fff; opacity:1;}
+.modal-dialog .modal-footer{padding-top:10px; padding-bottom:10px;}
+/* Popup Css End */
+
+.searchBoxSty .searchIcon{position:absolute; top:5px; right:6px;}
+.paddingRight-30{padding-right:30px;}
+
+.branchTitleC{border-bottom:1px solid #ddd; margin:15px 0 5px; padding:0 0 8px; font-weight:500; font-size:0.9rem; color:#277bd6;}
+.branchBtnM{border-top:1px dashed #ddd; padding: 5px 0 0;}
+
+.minWidth-220{min-width:auto;}
+
+.editIconStyle{padding:0; width:27px; height:27px; margin-right:12px; border-radius:50%;}
+.editIconStyle:hover{ background:none;}
+.editIconStyle img{width:16px;}
+.driverProfilePic{display:none;}
+
+/* mobile Menu */
+.mobileMenuBtn{position:absolute; left:0; top:3px;}
+.afterLoginPageMain{padding-top:30px;}
+.navMainHAL{position:fixed; width:160px; z-index:9; background:#fff; left:0; bottom:0; top:44px; box-shadow:0 3px 5px #444;}
+.navMainHAL .nav{ flex-flow:column;}
+.navMainHAL .nav-item{border-bottom:1px solid #f3f3f3;}
+.navMainHAL .nav-item .nav-link{ color:#000;}
+.navMainHAL .nav .active .nav-link {color: #019cfe;}
+.headerAL{position:fixed; width:100%; z-index:9; padding:0;}
+.openMB{display:block;}
+.closeMB{display:none;}
+.mobileMenuBtn{display:block; position:absolute; top:2px; left:2px; /* background:none !important; border:none !important; */ }
+.dropdown .navMainHAL{display:none;}
+.dropdown.show .navMainHAL{display:block;}
+
+.accordionUiMD{justify-content:flex-start !important; align-items:flex-start !important; flex-flow:column;}
+.accordionUiMD .fieldMainCM{margin-right:0;}
+.btnEAc{text-align:right;}
+.btnEAc button{display:block; padding:5px 0;}
+.btnEAc .iconBtnSty img{margin:-2px 0 0;}
+#mapParent{margin-top:45px;}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+/* Heading Style */
+.headingSty{margin:0 0 15px;}
+
+/* After Login CSS */
+.padding-3{padding:3px;}
+
+/* Header After Login CSS Start */
+/*.container-fluid{padding-right:32px; padding-left:32px;}*/
+.vtsBgGradient{background:#000;}
+.headerAL{padding:6px 0;}
+.headerAL .logoImgSty{width:150px;}
+.headerAL .nav .nav-link{color:#fff; padding:0.3rem 0.8rem; font-size:0.9rem; cursor:pointer;}
+.headerAL .nav .active .nav-link{color:#95faff;}
+.headerAL .nav .profileDropdown button{background:none; border:none; margin:0; padding:0; font-size:0.9rem;}
+.headerAL .nav .profileDropdown button:focus{box-shadow:none !important; outline:none !important; background:none !important;}
+.headerAL .nav .profileDropdown .dropdown-item{font-size:0.9rem; padding:5px 10px;}
+.headerAL .nav .profileDropdown .dropdown-item:hover{color:#16181b; text-decoration:none; background-color:#daf0f7;}
+.headerAL .nav .profileDropdown .dropdown-item:focus{color:#16181b; text-decoration:none;}
+.userProfImg img{width:35px; border-radius:50%;}
+.bellSty .badge{position:absolute; top:-1px; left:14px; font-weight:500;}
+/* Header After Login CSS End */
+
+/* Contentarea After Login CSS Start */
+.afterLoginPageMain{position:relative;}
+/* .contentBgGradient{background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); height:350px; top:-30px; position:absolute; left:0; z-index:-1; right:0;} */
+.contentAreaBox{height: calc(100vh - 80px); padding:12px; background:#fff; border-radius:10px; width:100%; box-shadow:0 0 6px #8c8c8c; margin:22px 0 0;}
+.contentSecMain{max-height:520px; overflow-y:auto; padding-left:10px; padding-right:10px;}
+.heightAuto{height:auto;}
+.titleAndSearchMain{padding-left:10px; padding-right:10px;}
+/* Contentarea After Login CSS End */
+
+.totalBox{border-radius:10px; width:180px; text-align:center; border:1px solid #ddd; padding:15px 0; margin:20px 0 0; background-color:rgba(255, 255, 255, 0.9);}
+.totalBox .titleTC{font-weight:500; margin:10px 0 7px; color:#757575; font-size:0.9rem;}
+.totalBox .valueTC{font-size:1rem; font-weight:500; color:#000;}
+
+.cardListScroll{overflow-y:auto; max-height:250px;}
+.cardListSty{box-shadow:0 0 10px #ddd; border-radius:10px; border:1px solid #ddd;}
+.cardListSty .headerCL{background:#dff4ff; border-radius:10px 10px 0 0; padding:5px 10px; border-bottom:1px solid #ddd;}
+.cardListSty .bodyCL{padding:10px;}
+.bodyCL li{border-bottom:1px solid #ddd; margin:0 0 7px; padding:0 0 7px;}
+.bodyCL li:last-child{border-bottom:none; margin:0; padding:0;}
+.bodyCL li label{margin:0; padding:0; display:inline-block; margin-right:5px;}
+.bodyCL .companyText{ font-weight:500;}
+.ownerText label, .ownerText span{color:#737373;}
+
+/* Accordion Card CSS Start */
+.accordionCardMain{margin:0 0 16px 0; background:#e4f4f9; border:1px solid #a3dcec; border-radius:5px; box-shadow:0 0 3px #c5c4c4;}
+.accordionCardHed{padding:3px 10px; border-radius:6px 6px 0 0;}
+.accordionCardHed .iconBtnSty{transform: rotate(180deg); -ms-transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transition: all 0.7s ease-in-out; -moz-transition: all 0.7s ease-in-out; -o-transition: all 0.7s ease-in-out; transition: all 0.7s ease-in-out;}
+.accordionCardHed .iconBtnSty.collapsed{transform: rotate(0deg); -ms-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg);}
+.accordionCardMain .fieldMainCM{margin-right:13px;}
+.accordionCardHed .highlightLabel{color:#0067a2;}
+.accordionCardMain label{margin:0 5px 0 0; display:inline-block;}
+.accordionCardBody{padding:10px; background:#fff; border-top:1px solid #a3dcec;  border-radius:0 0 6px 6px;}
+/* Accordion Card CSS End */
+
+/* button Icon */
+.iconBtnSty{border:1px solid #0388d1; padding:1px 0 0; margin:4px 0; width:26px; height:26px; border-radius:50%;}
+.iconBtnBN{padding:0; margin:0;}
+
+.driverProfilePic img{width:128px; height:128px; border:1px solid #a3dcec; border-radius:50%; padding:2px;}
+
+.devicesBoxMain .devicesBox{border:1px solid #a3dcec; margin:6px; min-width:235px; padding:10px 10px 15px; border-radius:10px; box-shadow: 0 0 3px #c5c4c4;}
+.devicesBoxMain .deviceImg{margin:5px auto 10px; text-align:center; padding-bottom:16px; border-bottom:1px dashed #ade0ee;}
+.devicesBoxMain .deviceImg img{width:50px;}
+.devicesBoxMain label{margin:0; padding:0; display:block;}
+.devicesBoxMain span{margin:0; padding:0 0 0 5px; display:block;}
+
+/* Popup Css Start */
+.modal-dialog .modal-content{box-shadow:0 0 5px #444; border-radius:10px;}
+.modal-dialog .modal-header{background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); padding:8px 15px; border-radius:8px 8px 0 0;}
+.modal-dialog .modal-header .modal-title{color:#fff; font-weight:normal;}
+.modal-dialog .close{font-weight:500; color:#fff; opacity:1;}
+.modal-dialog .modal-footer{padding-top:10px; padding-bottom:10px;}
+/* Popup Css End */
+
+.searchBoxSty .searchIcon{position:absolute; top:5px; right:6px;}
+.paddingRight-30{padding-right:30px;}
+
+.branchTitleC{border-bottom:1px solid #ddd; margin:15px 0 5px; padding:0 0 8px; font-weight:500; font-size:0.9rem; color:#277bd6;}
+.branchBtnM{border-top:1px dashed #ddd; padding: 5px 0 0;}
+
+.minWidth-220{min-width:220px;}
+
+.editIconStyle{padding:0; width:27px; height:27px; margin-right:12px; border-radius:50%;}
+.editIconStyle:hover{ background:none;}
+.editIconStyle img{width:16px;}
+
+/* After Login CSS */
+.padding-3{padding:3px;}
+
+/* Header After Login CSS Start */
+/*.container-fluid{padding-right:32px; padding-left:32px;}*/
+.vtsBgGradient{background:#000;}
+.headerAL{padding:6px 0;}
+.logoStyM{margin:10px 0;}
+.headerAL .logoImgSty{width:150px;}
+.headerAL .nav .nav-link{color:#fff; padding:0.3rem 0.5rem; font-size:0.9rem; cursor:pointer;}
+.headerAL .nav .active .nav-link{color:#95faff;}
+.headerAL .nav .profileDropdown button{background:none; border:none; margin:0; padding:0; font-size:0.9rem;}
+.headerAL .nav .profileDropdown button:focus{box-shadow:none !important; outline:none !important; background:none !important;}
+.headerAL .nav .profileDropdown .dropdown-item{font-size:0.9rem; padding:5px 10px;}
+.headerAL .nav .profileDropdown .dropdown-item:hover{color:#16181b; text-decoration:none; background-color:#daf0f7;}
+.headerAL .nav .profileDropdown .dropdown-item:focus{color:#16181b; text-decoration:none;}
+.userProfImg img{width:35px; border-radius:50%;}
+.bellSty .badge{position:absolute; top:-1px; left:14px; font-weight:500;}
+/* Header After Login CSS End */
+
+/* Contentarea After Login CSS Start */
+.afterLoginPageMain{position:relative;}
+/* .contentBgGradient{background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); height:350px; top:-30px; position:absolute; left:0; z-index:-1; right:0;} */
+.contentAreaBox{height:auto; padding:12px; background:#fff; border-radius:10px; width:100%; box-shadow:0 0 6px #8c8c8c; margin:22px 0 0;}
+.contentSecMain{max-height:520px; overflow-y:auto; padding-left:10px; padding-right:10px;}
+.heightAuto{height:auto;}
+.titleAndSearchMain{padding-left:10px; padding-right:10px;}
+/* Contentarea After Login CSS End */
+
+.totalBox{border-radius:10px; width:180px; text-align:center; border:1px solid #ddd; padding:15px 0; margin:20px 0 0; background-color:rgba(255, 255, 255, 0.9);}
+.totalBox .titleTC{font-weight:500; margin:10px 0 7px; color:#757575; font-size:0.9rem;}
+.totalBox .valueTC{font-size:1rem; font-weight:500; color:#000;}
+
+.cardListScroll{overflow-y:auto; max-height:250px;}
+.cardListSty{box-shadow:0 0 10px #ddd; border-radius:10px; border:1px solid #ddd;}
+.cardListSty .headerCL{background:#dff4ff; border-radius:10px 10px 0 0; padding:5px 10px; border-bottom:1px solid #ddd;}
+.cardListSty .bodyCL{padding:10px;}
+.bodyCL li{border-bottom:1px solid #ddd; margin:0 0 7px; padding:0 0 7px;}
+.bodyCL li:last-child{border-bottom:none; margin:0; padding:0;}
+.bodyCL li label{margin:0; padding:0; display:inline-block; margin-right:5px;}
+.bodyCL .companyText{ font-weight:500;}
+.ownerText label, .ownerText span{color:#737373;}
+
+/* Accordion Card CSS Start */
+.accordionCardMain{margin:0 0 16px 0; background:#e4f4f9; border:1px solid #a3dcec; border-radius:5px; box-shadow:0 0 3px #c5c4c4;}
+.accordionCardHed{padding:3px 10px; border-radius:6px 6px 0 0;}
+.accordionCardHed .iconBtnSty{transform: rotate(180deg); -ms-transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transition: all 0.7s ease-in-out; -moz-transition: all 0.7s ease-in-out; -o-transition: all 0.7s ease-in-out; transition: all 0.7s ease-in-out;}
+.accordionCardHed .iconBtnSty.collapsed{transform: rotate(0deg); -ms-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg);}
+.accordionCardMain .fieldMainCM{margin-right:13px;}
+.accordionCardHed .highlightLabel{color:#0067a2;}
+.accordionCardMain label{margin:0 5px 0 0; display:inline-block;}
+.accordionCardBody{padding:10px; background:#fff; border-top:1px solid #a3dcec;  border-radius:0 0 6px 6px;}
+/* Accordion Card CSS End */
+
+/* button Icon */
+.iconBtnSty{border:1px solid #0388d1; padding:1px 0 0; margin:4px 0; width:26px; height:26px; border-radius:50%;}
+.iconBtnBN{padding:0; margin:0;}
+
+.driverProfilePic img{width:128px; height:128px; border:1px solid #a3dcec; border-radius:50%; padding:2px;}
+
+.devicesBoxMain .devicesBox{border:1px solid #a3dcec; margin:6px; min-width:235px; padding:10px 10px 15px; border-radius:10px; box-shadow: 0 0 3px #c5c4c4;}
+.devicesBoxMain .deviceImg{margin:5px auto 10px; text-align:center; padding-bottom:16px; border-bottom:1px dashed #ade0ee;}
+.devicesBoxMain .deviceImg img{width:50px;}
+.devicesBoxMain label{margin:0; padding:0; display:block;}
+.devicesBoxMain span{margin:0; padding:0 0 0 5px; display:block;}
+
+/* Popup Css Start */
+.modal-dialog .modal-content{box-shadow:0 0 5px #444; border-radius:10px;}
+.modal-dialog .modal-header{background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); padding:8px 15px; border-radius:8px 8px 0 0;}
+.modal-dialog .modal-header .modal-title{color:#fff; font-weight:normal;}
+.modal-dialog .close{font-weight:500; color:#fff; opacity:1;}
+.modal-dialog .modal-footer{padding-top:10px; padding-bottom:10px;}
+/* Popup Css End */
+
+.searchBoxSty .searchIcon{position:absolute; top:5px; right:6px;}
+.paddingRight-30{padding-right:30px;}
+
+.branchTitleC{border-bottom:1px solid #ddd; margin:15px 0 5px; padding:0 0 8px; font-weight:500; font-size:0.9rem; color:#277bd6;}
+.branchBtnM{border-top:1px dashed #ddd; padding: 5px 0 0;}
+
+.minWidth-220{min-width:auto;}
+
+.editIconStyle{padding:0; width:27px; height:27px; margin-right:12px; border-radius:50%;}
+.editIconStyle:hover{ background:none;}
+.editIconStyle img{width:16px;}
+.driverProfilePic{display:none;}
+
+/* mobile Menu */
+.mobileMenuBtn{position:absolute; left:0; top:3px;}
+.afterLoginPageMain{padding-top:30px;}
+.navMainHAL{position:fixed; width:25%; z-index:9; background:#fff; left:0; bottom:0; top:44px; box-shadow:0 3px 5px #444;}
+.navMainHAL .nav{ flex-flow:column;}
+.navMainHAL .nav-item{border-bottom:1px solid #f3f3f3;}
+.navMainHAL .nav-item .nav-link{ color:#000;}
+.navMainHAL .nav .active .nav-link {color: #019cfe;}
+.headerAL{position:fixed; width:100%; z-index:9; padding:0;}
+.openMB{display:block;}
+.closeMB{display:none;}
+.mobileMenuBtn{display:block; position:absolute; top:2px; left:2px; /* background:none !important; border:none !important; */ }
+.dropdown .navMainHAL{display:none;}
+.dropdown.show .navMainHAL{display:block;}
+#mapParent{margin-top:45px;}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+body, .form-control, .btn{font-size:0.8rem;}
+
+.container{padding-right:0; padding-left:0;}
+
+/* Header Before Login Css Start */
+.headerBL{/*background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%);*/ padding-top:10px; padding-bottom:10px;}
+.headerBL .siteName img{width:60px;}
+.headerBL .menuMain {position:static; display:block; background:transparent; height:auto; border-top:none; width:auto; padding:0; border-right:none; box-shadow:none;}
+.headerBL .menusSty{margin:0; padding:0;}
+.headerBL .menusSty li{margin:0; padding:0 0 0 25px; list-style:none;}
+.headerBL .menusSty a{margin:0; padding:0; color:#fff;}
+
+/* Header Before Login Css End */
+
+/* Banner CSS Start */
+.bannerMain{/*background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); box-shadow:0 1px 6px #05586f inset;*/ height:450px;}
+
+.loginFormMain{background:#fff; border-radius:10px; margin:25px 0 0; padding: 20px;}
+.loginFormMain .loginTitle{margin:0 0 20px 0;}
+.loginFormMain input{border:none; border-bottom:1px solid #b8b8b8; border-radius:0 !important; padding-left:35px;}
+.loginFormMain input:focus {border:none; border-bottom:1px solid #0196ff; outline:0; box-shadow:none;}
+.loginFormMain .iconStyLg{position:absolute; left:5px; top:5px;}
+.loginFormMain .loginbtn{width:230px; margin:0 auto; display:block; font-size:1rem;}
+
+/* Truck Animation CSS Start */
+.cityImg{background:url(assets/img/safety-copy-4-at-4x-8.png) repeat 0 0; width:100%; height:251px; top:60px; position:absolute; opacity:0.4; -webkit-animation: slideImg 40s linear infinite; -moz-animation: slideImg 40s linear infinite; -ms-animation: slideImg 40s linear infinite; -o-animation: slideImg 40s linear infinite; animation: slideImg 40s linear infinite;}
+.truckSty{width:20em; height:12.5em; position:relative; margin-top:130px; opacity: 1; margin-left:auto; margin-right:auto; z-index:4; -webkit-animation: carMove 0.3s infinite; -moz-animation: carMove 0.3s infinite; -ms-animation: carMove 0.3s infinite; -o-animation: carMove 0.3s infinite; animation: carMove 0.3s infinite;}
+.truckSty img{width:230px;}
+.wind{position:absolute; z-index:-1; right:100%; height:100%; top:0; margin-right:-1.25em;}
+.wind .p{position:absolute; background:#fff; border-radius:0.625em; height:0.225em;}
+.wind .p1{width:4.375em; position:absolute; right:0; top:1.5625em; animation: wind 1s -1s linear infinite;}
+.wind .p2{width:6.25em; right:2.5em; top:3.75em; animation: wind 1s -2s linear infinite;}
+.wind .p3{width:3.125em; right:0; top:6.5625em; animation: wind 1s -1s linear infinite;}
+.wind .p4{width:3.75em; right:6.25em; top:8.4375em; animation: wind 1s 1s linear infinite;}
+.wind .p5{width:4.375em; right:1.875em; top:9.0625em; animation: wind 1s -1.5s linear infinite;}
+/* Truck Animation CSS End */
+
+/* Banner CSS End */
+.positionR{position:relative;}
+.btnGradientB{/*background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%);*/ background:#ff3a3a; border:none; color:#fff;}
+.btnGradientB:hover{/*background-image: linear-gradient(to left, #0081ff 0%, #03c6fc 80%);*/ background:#dc3c3c; color:#fff;}
+
+/* Support Privacy Tracking CSS Start */
+.supportPrivacyTrackingMain{margin-top:-125px;}
+.supportPrivacyTrackingMain .boxStyMain{background:#fff; box-shadow:0 3px 5px #a9a7a7; border-radius:10px 10px 0 0; padding:10px; text-align:center;}
+.supportPrivacyTrackingMain .imgMain{justify-content:center; width:70px; height:70px; border-radius:50%; border:2px solid #03c6fc; margin:0 auto; background-color:#f3f5f8; display:flex; align-items: center;}
+.supportPrivacyTrackingMain .imgMain img{width:45px;}
+.supportPrivacyTrackingMain .boxStyMain .boxTitleSPT{font-weight:400; color:#000; margin:15px 0;}
+.supportPrivacyTrackingMain .boxStyMain p{margin:0; color:#737373;}
+/* Support Privacy Tracking CSS End */
+
+/* About Us Section CSS Start */
+.aboutusSecMain{text-align:center; padding:25px 0;}
+.aboutusSecMain p{ color:#737373;}
+/* About Us Section CSS End */
+
+/* Our Clients Section CSS Start */
+.ourClientsMain{background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); padding-bottom:50px;}
+.ourClientsMain .ourClientsBox{padding:15px; margin:10px; border:1px solid #fff;}
+.ourClientsMain .ourClientsImg{width:60px; margin:0 auto;}
+.ourClientsMain .ourClientsImg img{width:60px; border-radius:50%; border:2px solid #fff; height:60px;}
+.ourClientsMain .ourClientTitle{color:#fff; text-align:center; margin:15px 0 10px; font-weight:400;}
+.ourClientsMain p{color:#fff; text-align:center; margin:0;}
+.ourClientsMain .carousel-indicators{bottom:-50px;}
+/* Our Clients Section CSS End */
+
+/* Contact Us Section CSS Start */
+.contactUsSecMain{background:#f7f7f7; padding:10px 0;}
+.contactUsSecMain p{color:#737373; text-align:center; margin:15px 0;}
+.contactUsSecMain .sendMessageBtn{width:180px; margin:0; display:block; font-size:1rem;}
+.contactBoldTitle{display: block; font-weight:600; margin:2px 0 0; font-size:1rem;}
+
+.mapSectionMain{border-top:1px solid #b5babb;}
+.mapSectionMain iframe{width:100%; height:230px;}
+/* Contact Us Section CSS End */
+
+/* Footer Section Start */
+.footerMain{background-color:#13253b; padding-top:10px; padding-bottom:10px;}
+.footerMain .copyRightTxt{color:#89929d; margin-bottom:0;}
+.socialIconFot{display:flex; justify-content:flex-end; margin:0; padding:0;}
+.socialIconFot li{list-style:none; margin:0 0 0 15px; padding:0;}
+.socialIconFot li i{color:#89929d; font-size:20px;}
+
+/* Heading Style */
+.headingSty{margin:0 0 15px;}
+
+
+/* Heading Style */
+.headingSty{margin:0 0 15px;}
+
+/* After Login CSS */
+.padding-3{padding:3px;}
+
+/* Header After Login CSS Start */
+/*.container-fluid{padding-right:32px; padding-left:32px;}*/
+.vtsBgGradient{background:#000;}
+.headerAL{padding:6px 0;}
+.logoStyM{margin:10px 0;}
+.headerAL .logoImgSty{width:150px;}
+.headerAL .nav .nav-link{color:#fff; padding:0.3rem 0.5rem; font-size:0.9rem; cursor:pointer;}
+.headerAL .nav .active .nav-link{color:#95faff;}
+.headerAL .nav .profileDropdown button{background:none; border:none; margin:0; padding:0; font-size:0.9rem;}
+.headerAL .nav .profileDropdown button:focus{box-shadow:none !important; outline:none !important; background:none !important;}
+.headerAL .nav .profileDropdown .dropdown-item{font-size:0.9rem; padding:5px 10px;}
+.headerAL .nav .profileDropdown .dropdown-item:hover{color:#16181b; text-decoration:none; background-color:#daf0f7;}
+.headerAL .nav .profileDropdown .dropdown-item:focus{color:#16181b; text-decoration:none;}
+.userProfImg img{width:35px; border-radius:50%;}
+.bellSty .badge{position:absolute; top:-1px; left:14px; font-weight:500;}
+/* Header After Login CSS End */
+
+/* Contentarea After Login CSS Start */
+.afterLoginPageMain{position:relative;}
+/* .contentBgGradient{background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); height:350px; top:-30px; position:absolute; left:0; z-index:-1; right:0;} */
+.contentAreaBox{height:auto; padding:12px; background:#fff; border-radius:10px; width:100%; box-shadow:0 0 6px #8c8c8c; margin:22px 0 0;}
+.contentSecMain{max-height:520px; overflow-y:auto; padding-left:10px; padding-right:10px;}
+.heightAuto{height:auto;}
+.titleAndSearchMain{padding-left:10px; padding-right:10px;}
+/* Contentarea After Login CSS End */
+
+.totalBox{border-radius:10px; width:180px; text-align:center; border:1px solid #ddd; padding:15px 0; margin:20px 0 0; background-color:rgba(255, 255, 255, 0.9);}
+.totalBox .titleTC{font-weight:500; margin:10px 0 7px; color:#757575; font-size:0.9rem;}
+.totalBox .valueTC{font-size:1rem; font-weight:500; color:#000;}
+
+.cardListScroll{overflow-y:auto; max-height:250px;}
+.cardListSty{box-shadow:0 0 10px #ddd; border-radius:10px; border:1px solid #ddd;}
+.cardListSty .headerCL{background:#dff4ff; border-radius:10px 10px 0 0; padding:5px 10px; border-bottom:1px solid #ddd;}
+.cardListSty .bodyCL{padding:10px;}
+.bodyCL li{border-bottom:1px solid #ddd; margin:0 0 7px; padding:0 0 7px;}
+.bodyCL li:last-child{border-bottom:none; margin:0; padding:0;}
+.bodyCL li label{margin:0; padding:0; display:inline-block; margin-right:5px;}
+.bodyCL .companyText{ font-weight:500;}
+.ownerText label, .ownerText span{color:#737373;}
+
+/* Accordion Card CSS Start */
+.accordionCardMain{margin:0 0 16px 0; background:#e4f4f9; border:1px solid #a3dcec; border-radius:5px; box-shadow:0 0 3px #c5c4c4;}
+.accordionCardHed{padding:3px 10px; border-radius:6px 6px 0 0;}
+.accordionCardHed .iconBtnSty{transform: rotate(180deg); -ms-transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transition: all 0.7s ease-in-out; -moz-transition: all 0.7s ease-in-out; -o-transition: all 0.7s ease-in-out; transition: all 0.7s ease-in-out;}
+.accordionCardHed .iconBtnSty.collapsed{transform: rotate(0deg); -ms-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg);}
+.accordionCardMain .fieldMainCM{margin-right:13px;}
+.accordionCardHed .highlightLabel{color:#0067a2;}
+.accordionCardMain label{margin:0 5px 0 0; display:inline-block;}
+.accordionCardBody{padding:10px; background:#fff; border-top:1px solid #a3dcec;  border-radius:0 0 6px 6px;}
+/* Accordion Card CSS End */
+
+/* button Icon */
+.iconBtnSty{border:1px solid #0388d1; padding:1px 0 0; margin:4px 0; width:26px; height:26px; border-radius:50%;}
+.iconBtnBN{padding:0; margin:0;}
+
+.driverProfilePic img{width:128px; height:128px; border:1px solid #a3dcec; border-radius:50%; padding:2px;}
+
+.devicesBoxMain .devicesBox{border:1px solid #a3dcec; margin:6px; min-width:235px; padding:10px 10px 15px; border-radius:10px; box-shadow: 0 0 3px #c5c4c4;}
+.devicesBoxMain .deviceImg{margin:5px auto 10px; text-align:center; padding-bottom:16px; border-bottom:1px dashed #ade0ee;}
+.devicesBoxMain .deviceImg img{width:50px;}
+.devicesBoxMain label{margin:0; padding:0; display:block;}
+.devicesBoxMain span{margin:0; padding:0 0 0 5px; display:block;}
+
+/* Popup Css Start */
+.modal-dialog .modal-content{box-shadow:0 0 5px #444; border-radius:10px;}
+.modal-dialog .modal-header{background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); padding:8px 15px; border-radius:8px 8px 0 0;}
+.modal-dialog .modal-header .modal-title{color:#fff; font-weight:normal;}
+.modal-dialog .close{font-weight:500; color:#fff; opacity:1;}
+.modal-dialog .modal-footer{padding-top:10px; padding-bottom:10px;}
+/* Popup Css End */
+
+.searchBoxSty .searchIcon{position:absolute; top:5px; right:6px;}
+.paddingRight-30{padding-right:30px;}
+
+.branchTitleC{border-bottom:1px solid #ddd; margin:15px 0 5px; padding:0 0 8px; font-weight:500; font-size:0.9rem; color:#277bd6;}
+.branchBtnM{border-top:1px dashed #ddd; padding: 5px 0 0;}
+
+.minWidth-220{min-width:auto;}
+
+.editIconStyle{padding:0; width:27px; height:27px; margin-right:12px; border-radius:50%;}
+.editIconStyle:hover{ background:none;}
+.editIconStyle img{width:16px;}
+.driverProfilePic{display:none;}
+
+/* mobile Menu */
+.afterLoginPageMain{padding-top:0;}
+.navMainHAL .nav{ flex-flow:row;}
+.navMainHAL .nav-item{border-bottom:none;}
+.navMainHAL .nav-item .nav-link{ color:#fff;}
+.navMainHAL .nav .active .nav-link {color:#95faff;}
+.navMainHAL{position:static; width:auto; background:transparent; box-shadow:none;}
+.headerAL{position:static; width:auto; z-index:9; padding:6px 0;}
+.openMB{display:block;}
+.closeMB{display:block;}
+.mobileMenuBtn{display:none;}
+.dropdown .navMainHAL{display:block;}
+.dropdown.show .navMainHAL{display:block;}
+
+.accordionUiMD{justify-content:center !important; align-items:center !important; flex-flow:row;}
+.accordionUiMD .fieldMainCM{margin-right:13px;}
+.btnEAc{text-align:unset;}
+.btnEAc button{display:inline-block; padding: .375rem .75rem;}
+.btnEAc .iconBtnSty img{margin:0;}
+#mapParent{margin-top:0;}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+body, .form-control, .btn{font-size:0.8rem;}
+
+/* Header Before Login Css Start */
+.headerBL{ background:#000; /*background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%);*/ padding-top:10px; padding-bottom:10px;}
+.headerBL .siteName img{width:200px;}
+.headerBL .menuMain {position:static; display:block; background:transparent; height:auto; border-top:none; width:auto; padding:0; border-right:none; box-shadow:none;}
+.headerBL .menusSty{margin:0; padding:0;}
+.headerBL .menusSty li{margin:0; padding:0 0 0 25px; list-style:none;}
+.headerBL .menusSty a{margin:0; padding:0; color:#fff;}
+/* Header Before Login Css End */
+
+/* Banner CSS Start */
+.bannerMain{/*background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); box-shadow:0 1px 6px #05586f inset;*/ position:relative; height:335px;}
+
+.loginFormMain{background:#fff; box-shadow:0 0 10px #b5b5b5; margin:30px auto 0; padding:15px 20px; max-width:320px; border-radius:10px;}
+.loginFormMain .loginTitle{margin:0 0 20px 0;}
+.loginFormMain input{border:none; border-bottom:1px solid #b8b8b8; border-radius:0 !important; padding-left:35px;}
+.loginFormMain input:focus {border:none; border-bottom:1px solid #0196ff; outline:0; box-shadow:none;}
+.loginFormMain .iconStyLg{position:absolute; left:5px; top:5px;}
+.loginFormMain .loginbtn{width:230px; margin:0 auto; display:block; font-size:1rem;}
+
+/* Banner CSS End */
+.positionR{position:relative;}
+.btnGradientB{/*background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%);*/ background:#ff3a3a; border:none; color:#fff;}
+.btnGradientB:hover{/*background-image: linear-gradient(to left, #0081ff 0%, #03c6fc 80%);*/ background:#dc3c3c; color:#fff;}
+
+.sectionTitles{font-weight:400; text-align:center; font-size:2rem; text-transform:uppercase; padding:15px 0;}
+.sectionTitles span{display:block; border-bottom:4px solid #fe3a3a; width:70px; margin:7px auto;}
+
+/* Support Privacy Tracking CSS Start */
+.supportPrivacyTrackingMain{margin-top:0;}
+.supportPrivacyTrackingMain .boxStyMain{background:#fff; box-shadow:0 3px 5px #a9a7a7; border-radius:10px 10px 0 0; padding:20px; text-align:center;}
+.supportPrivacyTrackingMain .imgMain{justify-content:center; width:70px; height:70px; border-radius:50%; border:2px solid #03c6fc; margin:0 auto; background-color:#f3f5f8; display:flex; align-items: center;}
+.supportPrivacyTrackingMain .imgMain img{width:45px;}
+.supportPrivacyTrackingMain .boxStyMain .boxTitleSPT{font-weight:400; color:#000; margin:20px 0;}
+.supportPrivacyTrackingMain .boxStyMain p{margin:0; color:#737373;}
+/* Support Privacy Tracking CSS End */
+
+/* About Us Section CSS Start */
+.aboutusSecMain{text-align:center; padding:20px 0 50px;}
+.aboutusSecMain .aboutusSecTitle{color:#000;}
+.aboutusSecMain p{color:#737373; font-size:1rem;}
+/* About Us Section CSS End */
+
+/* Service Section CSS Start */
+.servicesSecM{ padding:20px 0 50px; background-image:url(assets/img/cityNightImg.jpg); background-position:center center; background-size:cover; background-repeat:no-repeat;}
+.servicesSecM .servBox{margin-top:30px;}
+.featureSecTitle{color:#fff;}
+.servicesSecM h3{font-weight:500; color:#fff; margin:0 0 5px 0; font-size:1.3rem;}
+.servIconSty{width:210px;}
+.servIconSty img{width:50px;}
+.servicesSecM p{color:#ccc; font-size:0.9rem;}
+/* Service Section CSS End */
+
+.mobileAppSecMain{ padding:20px 0 50px;}
+.mobAppImg img{width:290px;}
+.mobileAppSecTitle{color:#000;}
+
+/* Pricing Section CSS Start */
+.pricingMain{padding:20px 0 50px; background-image:url(assets/img/pricingBG.jpg); background-position:bottom center; background-size:cover; background-repeat:no-repeat;}
+.pricingBoxMain{background-color:rgba(255, 255, 255, 0.9); padding:20px; margin:30px 0; border-radius:10px;}
+.pricingHed{text-align:center;}
+.pricingFeatureList span{background-color:#1075d4; width:9px; height:9px; display:inline-block; border-radius:50%; margin-right:8px;}
+.pricingPlanType{font-size:1.8rem; font-weight:500; color:#1a1a36; line-height:normal;}
+.pricingTextType{font-size:0.9rem; color:#5d5d5d; margin:10px 0 0; line-height:normal;}
+.amountAndSymbol{display:flex; justify-content: center; align-items: center; margin: 15px 0 6px;}
+.amountAndSymbol label{font-size:2rem; font-weight:600; line-height:normal; margin:0; color:#1075d4;}
+.monthlyCharg{color:#717171;}
+.pricingFeatureList{margin:20px 0;}
+/* Pricing Section CSS End */
+
+
+/* Our Clients Section CSS Start */
+.ourClientsMain{background:#2c2928; padding:20px 0 50px;}
+.ourClientsMain .ourClientsTitle{color:#fff;}
+.ourClientsMain .ourClientsBox{padding:15px; margin:10px; border:1px solid #fff;}
+.ourClientsMain .ourClientsImg{width:60px; margin:0 auto;}
+.ourClientsMain .ourClientsImg img{width:60px; border-radius:50%; border:2px solid #fff; height:60px;}
+.ourClientsMain .ourClientTitle{color:#fff; text-align:center; margin:15px 0 10px; font-weight:400;}
+.ourClientsMain p{color:#fff; text-align:center; margin:0;}
+.ourClientsMain .carousel-indicators{bottom:-50px; z-index:8;}
+/* Our Clients Section CSS End */
+
+/* Contact Us Section CSS Start */
+.contactUsSecMain{background:#f7f7f7; padding:20px 0 50px;}
+.contactUsSecMain p{color:#737373; text-align:center; margin:15px 0; font-size:1rem;}
+.contactUsSecMain .sendMessageBtn{width:180px; margin:0; display:block; font-size:1rem;}
+.contactBoldTitle{display: block; font-weight:600; margin:2px 0 0; font-size:1rem;}
+
+.mapSectionMain{border-top:1px solid #b5babb;}
+.mapSectionMain iframe{width:100%; height:230px;}
+/* Contact Us Section CSS End */
+
+/* Footer Section Start */
+.footerMain{background-color:#13253b; padding-top:10px; padding-bottom:10px;}
+.footerMain .copyRightTxt{color:#89929d; margin-bottom:0;}
+.socialIconFot{display:flex; justify-content:flex-end; margin:0; padding:0;}
+.socialIconFot li{list-style:none; margin:0 0 0 15px; padding:0;}
+.socialIconFot li i{color:#89929d; font-size:20px;}
+
+/* Truck Animation CSS Start */
+.cityImg{background:url(assets/img/safety-copy-4-at-4x-8.png) repeat-x 0 0; width:100%; height:251px; top:0; position:absolute; opacity:0.4; -webkit-animation: slideImg 40s linear infinite; -moz-animation: slideImg 40s linear infinite; -ms-animation: slideImg 40s linear infinite; -o-animation: slideImg 40s linear infinite; animation: slideImg 40s linear infinite;}
+.truckSty{width:20em; height:12.5em; position:relative; margin-top:170px; opacity: 1; margin-left:auto; margin-right:auto; z-index:4; -webkit-animation: carMove 0.3s infinite; -moz-animation: carMove 0.3s infinite; -ms-animation: carMove 0.3s infinite; -o-animation: carMove 0.3s infinite; animation: carMove 0.3s infinite;}
+.truckSty img{width:auto;}
+.wind{position:absolute; z-index:-1; right:100%; height:100%; top:0; margin-right:-1.25em;}
+.wind .p{position:absolute; background:#505050; border-radius:0.625em; height:0.225em;}
+.wind .p1{width:4.375em; position:absolute; right:0; top:1.5625em; animation: wind 1s -1s linear infinite;}
+.wind .p2{width:6.25em; right:2.5em; top:3.75em; animation: wind 1s -2s linear infinite;}
+.wind .p3{width:3.125em; right:0; top:6.5625em; animation: wind 1s -1s linear infinite;}
+.wind .p4{width:3.75em; right:6.25em; top:8.4375em; animation: wind 1s 1s linear infinite;}
+.wind .p5{width:4.375em; right:1.875em; top:9.0625em; animation: wind 1s -1.5s linear infinite;}
+
+.roadBg{position:absolute; bottom: 0; background:url(assets/img/road.jpg) no-repeat center center #848484; left:0; right:0; width:100%; height:85px;}
+
+
+/* Truck Animation CSS End */
+
+/* Heading Style */
+.headingSty{margin:0 0 15px;}
+
+/* After Login CSS */
+.padding-3{padding:3px;}
+
+/* Header After Login CSS Start */
+/*.container-fluid{padding-right:32px; padding-left:32px;}*/
+.vtsBgGradient{background:#000;}
+.headerAL{padding:6px 0;}
+.headerAL .logoImgSty{width:150px;}
+.headerAL .nav .nav-link{color:#fff; padding:0.3rem 0.8rem; font-size:0.9rem; cursor:pointer;}
+.headerAL .nav .active .nav-link{color:#95faff;}
+.headerAL .nav .profileDropdown button{background:none; border:none; margin:0; padding:0; font-size:0.9rem;}
+.headerAL .nav .profileDropdown button:focus{box-shadow:none !important; outline:none !important; background:none !important;}
+.headerAL .nav .profileDropdown .dropdown-item{font-size:0.9rem; padding:5px 10px;}
+.headerAL .nav .profileDropdown .dropdown-item:hover{color:#16181b; text-decoration:none; background-color:#daf0f7;}
+.headerAL .nav .profileDropdown .dropdown-item:focus{color:#16181b; text-decoration:none;}
+.userProfImg img{width:35px; border-radius:50%;}
+.bellSty .badge{position:absolute; top:-1px; left:14px; font-weight:500;}
+/* Header After Login CSS End */
+
+/* Contentarea After Login CSS Start */
+.afterLoginPageMain{position:relative;}
+/* .contentBgGradient{background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); height:350px; top:-30px; position:absolute; left:0; z-index:-1; right:0;} */
+.contentAreaBox{height: calc(100vh - 94px); padding:12px; background:#fff; border-radius:10px; width:100%; box-shadow:0 0 6px #8c8c8c; margin:22px 0 0;}
+.contentSecMain{max-height:520px; overflow-y:auto; padding-left:10px; padding-right:10px;}
+.heightAuto{height:auto;}
+.titleAndSearchMain{padding-left:10px; padding-right:10px;}
+/* Contentarea After Login CSS End */
+
+.totalBox{border-radius:10px; width:180px; text-align:center; border:1px solid #ddd; padding:15px 0; margin:20px 0 0; background-color:rgba(255, 255, 255, 0.9);}
+.totalBox .titleTC{font-weight:500; margin:10px 0 7px; color:#757575; font-size:0.9rem;}
+.totalBox .valueTC{font-size:1rem; font-weight:500; color:#000;}
+
+.cardListScroll{overflow-y:auto; max-height:250px;}
+.cardListSty{box-shadow:0 0 10px #ddd; border-radius:10px; border:1px solid #ddd;}
+.cardListSty .headerCL{background:#dff4ff; border-radius:10px 10px 0 0; padding:5px 10px; border-bottom:1px solid #ddd;}
+.cardListSty .bodyCL{padding:10px;}
+.bodyCL li{border-bottom:1px solid #ddd; margin:0 0 7px; padding:0 0 7px;}
+.bodyCL li:last-child{border-bottom:none; margin:0; padding:0;}
+.bodyCL li label{margin:0; padding:0; display:inline-block; margin-right:5px;}
+.bodyCL .companyText{ font-weight:500;}
+.ownerText label, .ownerText span{color:#737373;}
+
+/* Accordion Card CSS Start */
+.accordionCardMain{margin:0 0 16px 0; background:#e4f4f9; border:1px solid #a3dcec; border-radius:5px; box-shadow:0 0 3px #c5c4c4;}
+.accordionCardHed{padding:3px 10px; border-radius:6px 6px 0 0;}
+.accordionCardHed .iconBtnSty{transform: rotate(180deg); -ms-transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transition: all 0.7s ease-in-out; -moz-transition: all 0.7s ease-in-out; -o-transition: all 0.7s ease-in-out; transition: all 0.7s ease-in-out;}
+.accordionCardHed .iconBtnSty.collapsed{transform: rotate(0deg); -ms-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg);}
+.accordionCardMain .fieldMainCM{margin-right:13px;}
+.accordionCardHed .highlightLabel{color:#0067a2;}
+.accordionCardMain label{margin:0 5px 0 0; display:inline-block;}
+.accordionCardBody{padding:10px; background:#fff; border-top:1px solid #a3dcec;  border-radius:0 0 6px 6px;}
+/* Accordion Card CSS End */
+
+/* button Icon */
+.iconBtnSty{border:1px solid #0388d1; padding:1px 0 0; margin:4px 0; width:26px; height:26px; border-radius:50%;}
+.iconBtnBN{padding:0; margin:0;}
+
+.driverProfilePic img{width:128px; height:128px; border:1px solid #a3dcec; border-radius:50%; padding:2px;}
+
+.devicesBoxMain .devicesBox{border:1px solid #a3dcec; margin:6px; min-width:235px; padding:10px 10px 15px; border-radius:10px; box-shadow: 0 0 3px #c5c4c4;}
+.devicesBoxMain .deviceImg{margin:5px auto 10px; text-align:center; padding-bottom:16px; border-bottom:1px dashed #ade0ee;}
+.devicesBoxMain .deviceImg img{width:50px;}
+.devicesBoxMain label{margin:0; padding:0; display:block;}
+.devicesBoxMain span{margin:0; padding:0 0 0 5px; display:block;}
+
+/* Popup Css Start */
+.modal-dialog .modal-content{box-shadow:0 0 5px #444; border-radius:10px;}
+.modal-dialog .modal-header{background-image: linear-gradient(to right, #0081ff 0%, #03c6fc 80%); padding:8px 15px; border-radius:8px 8px 0 0;}
+.modal-dialog .modal-header .modal-title{color:#fff; font-weight:normal;}
+.modal-dialog .close{font-weight:500; color:#fff; opacity:1;}
+.modal-dialog .modal-footer{padding-top:10px; padding-bottom:10px;}
+/* Popup Css End */
+
+.searchBoxSty .searchIcon{position:absolute; top:5px; right:6px;}
+.paddingRight-30{padding-right:30px;}
+
+.branchTitleC{border-bottom:1px solid #ddd; margin:15px 0 5px; padding:0 0 8px; font-weight:500; font-size:0.9rem; color:#277bd6;}
+.branchBtnM{border-top:1px dashed #ddd; padding: 5px 0 0;}
+
+.minWidth-220{min-width:220px;}
+
+.editIconStyle{padding:0; width:27px; height:27px; margin-right:12px; border-radius:50%;}
+.editIconStyle:hover{ background:none;}
+.editIconStyle img{width:16px;}
+
+.driverProfilePic{display:block;}
+
+/* mobile Menu */
+.afterLoginPageMain{padding-top:0;}
+.navMainHAL .nav{flex-flow:row;}
+.navMainHAL .nav-item{border-bottom:none;}
+.navMainHAL .nav-item .nav-link{color:#fff;}
+.navMainHAL .nav .active .nav-link{color:#ff3a3a;}
+.navMainHAL{position:static; width:auto; background:transparent; box-shadow:none;}
+.headerAL{position:static; width:auto; z-index:9; padding:6px 0;}
+.mobileMenuBtn{display:none;}
+.openMB{display:block;}
+.closeMB{display:block;}
+.dropdown .navMainHAL{display:block;}
+.dropdown.show .navMainHAL{display:block;}
+
+.accordionUiMD{justify-content:flex-start !important; align-items:center !important; flex-flow:row;}
+.accordionUiMD .fieldMainCM{margin-right:13px;}
+.btnEAc{text-align:unset;}
+.btnEAc button{display:inline-block; padding:0.375rem 0.75rem;}
+.btnEAc .iconBtnSty img{margin:0;}
+#mapParent{margin-top:0;}
+
+.mapStyPL{height:calc(100vh - 94px);}
+.mapStyPL iframe{height:100%; width:100%; border-radius:10px;}
+.formLoadPost{position: absolute; z-index:9; background:#fff; width:20%; height:calc(100vh - 107px); box-shadow:1px 1px 10px #b1b1b1; left:8px; top:7px; border-radius:10px; padding:10px;}
+.selectBoxLblSty{padding:0 8px; background:#fff7f3; width:50px; text-align:center; justify-content:center;}
+.selectBoxLblSty img{width:30px;}
+
+.formLoadPost ul li{list-style:none; border-bottom:1px solid #cfefff; padding:5px 0;}
+.formLoadPost ul .truckImgTRK img{width:40px;}
+.truckInfoTRK{border-left:1px solid #cfefff; padding-left:8px; margin:3px 0 3px 8px;}
+.truckNumb{font-weight:600; color:#444;}
+
+/* .servicesSecM{background-image: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 80%);} */
+
+.searchVehicleMain input{padding-right:30px;}
+.searchVehicleMain .searchVehicIcon{position: absolute; top: 6px; right: 5px;}
+
+.vehicleDetailsSec{position: absolute;
+    bottom: 7px;
+    background: #fff;
+    width: 76.4%;
+    height: 100px;
+    right: 23px;
+    border-radius: 10px;
+    border: 1px solid #3b8fea;
+    padding: 10px;
+    box-shadow: 1px 1px 10px #b1b1b1;}
+.vehicleDetailsSec span{display:block;}
+.vehicleDetailsSec label{display:block;}
+
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+
+/* Truck Animation */
+@keyframes slideImg {
+    from {background-position:0 0;}
+    to {background-position: -2943px 0;}
+}
+@keyframes carMove {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-1px);}
+    100% {transform: translateY(0px);}
+}
+@keyframes wind {
+    0% {transform: translateX(100%); opacity: 1;}
+    100% {transform: translateX(-400%); opacity: 0;}
+}
+@keyframes carDrive {
+    0% {transform: translateX(-100%);}
+    25% {transform: translateX(0%);}
+    70% {transform: translateX(0%);}
+    100% {transform: translateX(100%);}
+}
+@keyframes bgIn {
+    0% {left:100%;}
+    100% {left:-100%;}
+}
+@keyframes wrapperIn {
+    0% {transform: scale(0); opacity:0;}
+    100% {transform: scale(1); opacity: 1;}
+}
+/* Truck Animation */
+
+
+
+/* Firefox old*/
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.blink-image {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}

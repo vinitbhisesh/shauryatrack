@@ -1,0 +1,287 @@
+<div class="afterLoginPageMain">
+  <div class="contentBgGradient"></div>
+<div class="container-fluid">
+  <div class="contentAreaBox">
+
+<form>
+        <div class="form-row titleAndSearchMain align-items-center">
+        <div class="col-sm-12 col-md-3 col-lg-3 mb-2">
+          <h2 class="mb-0">Vehicle</h2>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 mb-2">
+                  <select class="form-control" id="selectCompany">
+                    <option>All Company</option>
+                    <option>Shaurya Technosoft Pvt. Ltd.</option>
+                    <option>Persistent Systems</option>
+                    <option>Tata Consultancy Services</option>
+                    <option>Infosys</option>
+                    <option>Honda Motor</option>
+                  </select>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 mb-2">
+            <div class="searchBoxSty position-relative">
+              <input type="text" class="form-control paddingRight-30" placeholder="Search">
+              <div class="searchIcon"><img src="assets/img/searchIcon.png" alt=""></div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-1 col-lg-1 mb-2">
+            <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#addvehicleModal">Add</button>
+        </div>
+      </div>
+</form>
+
+<div class="contentSecMain">
+
+<div class="accordion" id="companyAccordionMain">
+
+  <div class="accordionCardMain">
+    <div class="d-flex justify-content-between align-items-center accordionCardHed" id="companyHeadingOne">
+      <div>
+        <div class="d-flex justify-content-between align-items-center accordionUiMD">
+          <div class="fieldMainCM">
+            <label class="highlightLabel">Tata 407</label>
+          </div>
+          <div class="fieldMainCM">
+            <label>Vehicle Number:</label>
+            <span>MH12 AB 1111</span>
+          </div>
+          <div class="fieldMainCM">
+            <label>Chassis Number:</label>
+            <span>56A0DRE4601273</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button class="btn btn-link iconBtnSty" type="button" data-toggle="collapse" data-target="#companyOne" aria-expanded="true" aria-controls="companyOne"><img src="assets/img/downArrow.png"></button>
+      </div>
+    </div>
+
+    <div id="companyOne" class="collapse show" aria-labelledby="companyHeadingOne" data-parent="#companyAccordionMain">
+      <div class="accordionCardBody">
+      <div>
+        <div class="d-flex justify-content-start align-items-center accordionUiMD">
+          <div class="fieldMainCM">
+            <label>Engine Number:</label>
+            <span>48552EGT55</span>
+          </div>
+          <div class="fieldMainCM">
+            <label>Model Number:</label>
+            <span>47545f45ghd848</span>
+          </div>
+          <div class="fieldMainCM">
+            <label>Device Company:</label>
+            <span>NA</span>
+          </div>
+          <div class="fieldMainCM">
+            <label>Device Id:</label>
+            <span>154587545992</span>
+          </div>
+          <div class="fieldMainCM">
+            <label>Sim No.:</label>
+            <span>784945992</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordionCardMain">
+    <div class="d-flex justify-content-between align-items-center accordionCardHed" id="companyHeadingTwo">
+      <div>
+        <div class="d-flex justify-content-between align-items-center accordionUiMD">
+          <div class="fieldMainCM">
+            <label class="highlightLabel">Tata 407</label>
+          </div>
+          <div class="fieldMainCM">
+            <label>Vehicle Number:</label>
+            <span>MH12 AB 1111</span>
+          </div>
+          <div class="fieldMainCM">
+            <label>Chassis Number:</label>
+            <span>56A0DRE4601273</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button class="btn btn-link iconBtnSty" type="button" data-toggle="collapse" data-target="#companyTwo" aria-expanded="true" aria-controls="companyTwo"><img src="assets/img/downArrow.png"></button>
+      </div>
+    </div>
+
+    <div id="companyTwo" class="collapse" aria-labelledby="companyHeadingTwo" data-parent="#companyAccordionMain">
+      <div class="accordionCardBody">
+      <div>
+        <div class="d-flex justify-content-start align-items-center accordionUiMD">
+          <div class="fieldMainCM">
+            <label>Engine Number:</label>
+            <span>48552EGT55</span>
+          </div>
+          <div class="fieldMainCM">
+            <label>Model Number:</label>
+            <span>47545f45ghd848</span>
+          </div>
+          <div class="fieldMainCM">
+            <label>Manufacturing Year:</label>
+            <span>1992</span>
+          </div>
+          <div class="fieldMainCM">
+            <label>Device Company:</label>
+            <span>NA</span>
+          </div>
+          <div class="fieldMainCM">
+            <label>Device Id:</label>
+            <span>154587545992</span>
+          </div>
+          <div class="fieldMainCM">
+            <label>Sim No.:</label>
+            <span>784945992</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+  </div>
+</div>
+
+
+</div>
+
+
+
+<!-- Add Vehicle Modal -->
+<div class="modal fade" id="addvehicleModal" tabindex="-1" role="dialog" aria-labelledby="addvehicleModalTitle" data-backdrop="static" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addvehicleModalTitle">Add Vehicle</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+              <div class="form-row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="vehicleType_id">Select Company</label>
+                      <select id="vehicleType_id" class="form-control">
+                          <option>Shaurya Finance Pvt. Ltd.</option>
+                          <option>Shaurya Electronic Shopping Store.</option>
+                          <option>Shaurya Petroleum</option>
+                          <option>Shaurya Studio</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="vehicleType_id">Select Branch</label>
+                      <select id="vehicleType_id" class="form-control">
+                          <option>Shaurya Finance Pvt. Ltd.</option>
+                          <option>Shaurya Electronic Shopping Store.</option>
+                          <option>Shaurya Petroleum</option>
+                          <option>Shaurya Studio</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="form-group">
+                    <label for="vehicleName_id">Vehicle Name</label>
+                    <input type="text" id="vehicleName_id" class="form-control" placeholder="Vehicle Name" />
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="vehicleNumber_id">Vehicle Number</label>
+                    <input type="text" id="vehicleNumber_id" class="form-control" placeholder="Vehicle Number" />
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="chassisNumber_id">Chassis Number</label>
+                    <input type="text" id="chassisNumber_id" class="form-control" placeholder="Chassis Number" />
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="engineNumber_id">Engine Number</label>
+                    <input type="text" id="engineNumber_id" class="form-control" placeholder="Engine Number" />
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label for="modelNumber_id">Model Number</label>
+                    <input type="text" id="modelNumber_id" class="form-control" placeholder="Model Number" />
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label for="manufacturingYear_id">Manufacturing Year</label>
+                    <input type="text" id="manufacturingYear_id" class="form-control" placeholder="Manufacturing Year" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="vehicleType_id">Device Company</label>
+                      <select id="vehicleType_id" class="form-control">
+                          <option>Select</option>
+                          <option>Shaurya Finance Pvt. Ltd.</option>
+                          <option>Shaurya Electronic Shopping Store.</option>
+                          <option>Shaurya Petroleum</option>
+                          <option>Shaurya Studio</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="form-group">
+                      <label for="vehicleType_id">Device</label>
+                      <select id="vehicleType_id" class="form-control">
+                          <option>Select</option>
+                          <option>Device 1</option>
+                          <option>Device 1</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                  <div class="form-group">
+                    <label for="manufacturingYear_id">Sim No.</label>
+                    <div class="form-control">25487934465</div>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary pl-4 pr-4">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
